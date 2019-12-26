@@ -6,7 +6,7 @@ namespace Norn.Test
 {
     public class TestScheduler : IScheduler
     {
-        TestScheduler() { }
+        public TestScheduler() { }
 
         private readonly List<TestTimer> _timers = new List<TestTimer>();
 
