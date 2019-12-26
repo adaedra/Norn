@@ -1,0 +1,7 @@
+<Project>
+    <PropertyGroup>
+        <Version>0.1.1</Version>
+        <Authors>Thibault “Adædra” Hamel</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+</Project>
