@@ -1,14 +1,16 @@
 ﻿namespace Norn.Test
 {
-    class TestTimer : ITimer
+    public class TestTimer : ITimer
     {
         public TestTimer(double interval = 0) { Interval = interval; }
-        public void Start() {
+        public void Start()
+        {
             Enabled = true;
             RemainingTime = Interval;
         }
 
-        public void Stop() {
+        public void Stop()
+        {
             Enabled = false;
         }
 

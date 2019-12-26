@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Norn.Test
 {
-    class TestScheduler : IScheduler
+    public class TestScheduler : IScheduler
     {
         TestScheduler() { }
 
