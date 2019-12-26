@@ -10,7 +10,13 @@ namespace Norn.Test
 
         private readonly List<TestTimer> _timers = new List<TestTimer>();
 
-        public ITimer CreateTimer(double interval, bool autoReset = false) => new TestTimer(interval) { AutoReset = autoReset };
+        public ITimer CreateTimer(double interval, bool autoReset = false)
+        {
+            var timer = new TestTimer(interval) { AutoReset = autoReset };
+            _timers.Add(timer);
+            return timer;
+        }
+
         public ITimer CreateTimer(bool autoReset = false) => CreateTimer(0, autoReset);
 
         public void AdvanceToNextTimer()
